@@ -14,7 +14,7 @@ RUN sed -i.bak 's/us-west-2\.ec2\.//' /etc/apt/sources.list
 
 RUN apt -qq update
 
-RUN pip3 install --no-cache-dir -r requirements.txt
+RUN pip3 install -U -r requirements.txt
 
 # specifies what command to run within the container.
 
